@@ -66,7 +66,7 @@ else:
     if umur_2007 >= 10:
         print("Anda Mencukupi Umur")
     else:
-        print("Anda Tidak Mencukupi Umur")
+        print("Anda Tidak Mencukupi Umur").exit()
 
 # Akumulasi Diskon 
 harga_subtotal_2007 = harga_satuan_2007 * jumlah_tiket_2007
