@@ -53,21 +53,20 @@ match paket_wahana_2007:
 
 print("\n~~~~ Kelayakan Pengendara Wahana ~~~~")
 
-if paket_wahana_2007 == 3 :
-    if umur_2007 >= 17 and kartu_sim_2007 == 'y':
-        print("Anda sudah dewasa dan boleh mengendarai ATV sendiri.")
-    elif umur_2007  >= 17 and kartu_sim_2007 != 'y':
-        print("Anda sudah dewasa tetapi tidak boleh bawa motor ATV (wajib didampingi instruktur).")
-    elif umur_2007 < 17 and kartu_sim_2007 == 'y':
-        print( "Identitas tidak valid: Belum cukup umur memiliki SIM.")
-    else :
-        print("Anda belum cukup umur dan tidak boleh bawa motor ATV.")
+if paket_wahana_2007 == 3 and umur_2007 >= 17 and kartu_sim_2007 == 'y':
+    print("Anda sudah dewasa dan boleh mengendarai ATV sendiri.")
+elif paket_wahana_2007 == 3 and umur_2007  >= 17 and kartu_sim_2007 != 'y':
+    print("Anda sudah dewasa tetapi tidak boleh bawa motor ATV (wajib didampingi instruktur).")
+elif paket_wahana_2007 == 3 and umur_2007 < 17 and kartu_sim_2007 == 'y':
+    print( "Identitas tidak valid: Belum cukup umur memiliki SIM.")
+elif paket_wahana_2007 == 3 and umur_2007 < 17 and kartu_sim_2007 != 'y':
+    print("Anda belum cukup umur dan tidak boleh bawa motor ATV.")
+elif paket_wahana_2007 != 3 and umur_2007 >= 10:
+    print("Umur anda mencukupi untuk naik wahana ini")
 else:
-    if umur_2007 >= 10:
-        print("Anda Mencukupi Umur")
-    else:
-        print("Anda Tidak Mencukupi Umur").exit()
-
+    print("Umur anda tidak mencukupi untuk naik wahana ini")
+    
+    
 # Akumulasi Diskon 
 harga_subtotal_2007 = harga_satuan_2007 * jumlah_tiket_2007
 total_diskon_2007 = 0
