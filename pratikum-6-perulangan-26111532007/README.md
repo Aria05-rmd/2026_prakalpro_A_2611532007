@@ -1,3 +1,3 @@
-nama = Muhammad Rasya Fahrozi
+nama = Aria ramadhan
 kelas = A
-nim = 1007
+nim = 2007
