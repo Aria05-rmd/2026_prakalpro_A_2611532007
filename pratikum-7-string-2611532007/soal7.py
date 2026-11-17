@@ -1,6 +1,5 @@
 full_name = "Aria ramadhan"
 nim = "2611532007"
-
 name = full_name.lower().strip()
 spasi = name.find(" ")
 first_name = " "

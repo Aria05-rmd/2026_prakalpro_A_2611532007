@@ -27,5 +27,5 @@ elif len(nim) != 10:
   print("Invalid NIM")
 else:
   print("Valid") 
-  nim_baru = "x" * 2 + nim[3:]
-  print(nim_baru)
+  nimbaru = "x" * 2 + nim[3:]
+  print(nimbaru)
